@@ -11,18 +11,19 @@ const musicBtn = document.getElementById("musicBtn");
 
 let playing = false;
 
-musicBtn.onclick = function () {
+music.volume = 0.15;
 
-    if (!playing) {
+musicBtn.addEventListener("click", function(){
 
-        music.volume = 0.25;   // 25% volume
+    if(!playing){
+
         music.play();
 
         musicBtn.innerHTML = "⏸ Pause Music";
 
         playing = true;
 
-    } else {
+    }else{
 
         music.pause();
 
@@ -32,4 +33,4 @@ musicBtn.onclick = function () {
 
     }
 
-};
+});
