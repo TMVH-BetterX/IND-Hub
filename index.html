@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IND HUB</title>
+
+    <link rel="icon" type="image/png" href="Images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="loader">
+
+    <img src="Images/logo.png" class="loader-logo">
+
+    <h1>IND HUB</h1>
+
+    <p id="loadingText">Initializing...</p>
+
+    <div class="loading-bar">
+
+        <div id="loadingProgress"></div>
+
+    </div>
+
+    </div>
+    
+    <div id="cursorGlow"></div>
+
+    <div id="particles"></div>
+
+    <nav>
+
+        <div class="logo-section">
+
+            <img src="Images/logo.png" alt="IND HUB">
+
+            <h2>IND HUB</h2>
+
+        </div>
+
+    <ul>
+
+        <li><a href="index.html">🏠 Home</a></li>
+
+         <li><a href="#scripts">📜 Scripts</a></li>
+
+          <li><a href="updates.html">📰 Updates</a></li>
+
+          <li><a href="about.html">ℹ️ About</a></li>
+
+          <li><a href="https://discord.gg/XJPP2zbRJ8" target="_blank">💬 Discord</a></li>
+
+    </ul>
+
+        <audio id="bgMusic" loop>
+            <source src="music/misery.mp3" type="audio/mpeg">
+        </audio>
+
+
+
+    </nav>
+
+    <section class="hero" id="home">
+
+    <h1>Premium Roblox Script Hub</h1>
+
+    <p>Safe • Fast • Premium Scripts</p>
+
+    <p id="copyCounter" class="copy-counter">
+    📋 Scripts Copied: 0
+    </p>
+
+    <p class="creator">
+        Made By <span>MR_GAMING1141</span>
+    </p>
+
+    <a href="https://discord.gg/XJPP2zbRJ8" target="_blank" class="btn">
+        Join Discord
+    </a>
+
+    </section>
+
+    <section id="scripts">
+
+        
+
+        <div class="grid">
+
+            <section id="scripts">
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search Scripts..."
+        onkeyup="searchScripts()">
+
+    </div>
+
+    <h2 class="section-title">🔥 Popular Scripts</h2>
+
+    <div class="script-grid">
+
+        <div class="script-card searchable"
+
+          onclick="openPopup(
+           '🏋️ Muscle Master',
+          '🟢 Working',
+          'v2.1',
+          'Today',
+
+           `loadstring(game:HttpGet('https://raw.githubusercontent.com/MRGAMING1141/IND-CLAN-MM-SCRIPT-LOADER/refs/heads/main/Loader'))()`
+
+           )">
+
+            <img src="Images/musclemaster.png" alt="Muscle Master">
+
+            <span class="badge working">🟢 Working</span>
+
+            <h3>Muscle Master</h3>
+
+            <p>Copy Script Link Below</p>
+
+            <button
+            onclick="copyScript(`loadstring(game:HttpGet('https://raw.githubusercontent.com/MRGAMING1141/IND-CLAN-MM-SCRIPT-LOADER/refs/heads/main/Loader'))()`)">
+
+            📋 Copy Script
+
+            </button>
+
+        </div>
+
+        <div class="script-card searchable"
+
+            onclick="openPopup(
+            '⌨️ +1 Speed Keyboard Escape',
+            '🟢 Working',
+            'v1.0',
+            'Today',
+
+            `loadstring(game:HttpGet('https://api.rubis.app/v2/scrap/InOk0QwVtIZsE49c/raw'))()`
+
+            )">
+
+            <img src="Images/speed.png" alt="Speed">
+
+            <span class="badge working">🟢 Working</span>
+
+            <h3>+1 Speed Keyboard Escape</h3>
+
+            <p>Copy Script Link Below</p>
+
+            <button
+            onclick="copyScript(`loadstring(game:HttpGet('https://api.rubis.app/v2/scrap/InOk0QwVtIZsE49c/raw'))()`)">
+
+            📋 Copy Script
+
+            </button>
+
+        </div>
+
+        <div class="script-card searchable"
+
+            onclick="openPopup(
+            '👛 Throw A Coin',
+            '🟢 Working',
+            'v1.0',
+            'Today',
+
+            `loadstring(game:HttpGet('https://api.rubis.app/v2/scrap/JFjkaXRmKHPTZbzS/raw'))()`
+
+            )">
+
+            <img src="Images/throwcoin.png" alt="Throw A Coin">
+
+            <span class="badge working">🟢 Working</span>
+
+            <h3>Throw A Coin</h3>
+
+            <p>Copy Script Link Below</p>
+
+            <button
+            onclick="copyScript(`loadstring(game:HttpGet('https://api.rubis.app/v2/scrap/JFjkaXRmKHPTZbzS/raw'))()`)">
+
+            📋 Copy Script
+
+            </button>
+
+        </div>
+
+        <div class="script-card searchable"
+
+            onclick="openPopup(
+            '⚡ Flick',
+            '🟢 Working',
+            'v1.0',
+            'Today',
+
+            `loadstring(game:HttpGet('https://api.rubis.app/v2/scrap/NvOBgkwE4WL6W3DM/raw'))()`
+
+            )">
+
+            <img src="Images/flick.png" alt="Flick">
+
+            <span class="badge working">🟢 Working</span>
+
+            <h3>Flick</h3>
+
+            <p>Copy Script Link Below</p>
+
+            <button
+            onclick="copyScript(`loadstring(game:HttpGet('https://api.rubis.app/v2/scrap/NvOBgkwE4WL6W3DM/raw'))()`)">
+
+            📋 Copy Script
+
+            </button>
+
+        </div>
+
+
+        </div>
+
+        <p id="noResult"
+            style="display:none;text-align:center;font-size:22px;margin-top:30px;color:white;">
+            ❌ No scripts found.
+        </p>
+
+    </div>
+
+    </section>
+
+    <section id="features">
+
+        <h2>Features</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>⚡ Fast Updates</h3>
+            </div>
+
+            <div class="card">
+                <h3>🛡 Safe Scripts</h3>
+            </div>
+
+            <div class="card">
+                <h3>💎 Premium UI</h3>
+            </div>
+
+            <div class="card">
+                <h3>👥 Community Support</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="discord">
+
+        <h2>Join Our Community</h2>
+
+        <p>
+            Get the newest scripts before everyone else.
+        </p>
+
+        <a href="https://discord.gg/XJPP2zbRJ8" target="_blank" class="btn">
+            Join Discord
+        </a>
+
+    </section>
+
+    <footer>
+        © 2026 IND HUB • All Rights Reserved
+    </footer>
+
+        <div id="scriptPopup" class="popup">
+
+    <div class="popup-box">
+
+        <span class="closePopup">&times;</span>
+
+        <h2 id="popupTitle"></h2>
+
+        <p><b>Status:</b> <span id="popupStatus"></span></p>
+
+        <p><b>Version:</b> <span id="popupVersion"></span></p>
+
+        <p><b>Updated:</b> <span id="popupUpdated"></span></p>
+
+        <button id="popupCopy">
+            📋 Copy Script
+        </button>
+
+    </div>
+
+    </div>
+
+        <div id="toast" class="toast">
+            <span id="toastText">✅ Script Copied!</span>
+        </div>
+
+        <script src="script.js"></script>
+
+</body>
+</html>
